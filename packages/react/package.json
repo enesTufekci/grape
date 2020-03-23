@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "name": "@grape/react",
+  "author": "Enes Tüfekçi",
+  "module": "dist/react.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "start": "tsdx watch --format esm",
+    "build": "tsdx build --format esm",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "tsdx": "^0.13.0",
+    "tslib": "^1.11.1"
+  }
+}
